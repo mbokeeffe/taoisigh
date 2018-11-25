@@ -1,0 +1,17 @@
+<img src='assets/taoisigh/{{taoiseach.image}}.jpg'/>
+<h2>{{taoiseach.name}}</h2>
+<ul>
+  <li>{{taoiseach.yearOfBirth}} - {{taoiseach.yearOfDeath}}</li>
+  <li><span>Party:</span> {{taoiseach.name}}</li>
+  <li><span>Years in office:</span> {{taoiseach.yearsInPower}}</li>
+</ul>
+
+
+<ul class="taoisigh-list">
+  <li (click)='setTaoiseach(i)' *ngFor="let taoiseach of taoisigh; let i = index">
+    <div>
+      <img src='assets/taoisigh/{{taoiseach.image}}.jpg'/>
+      <span>{{ taoiseach.name }}</span>
+    </div>
+  </li>
+</ul>

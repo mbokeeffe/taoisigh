@@ -1,0 +1,12 @@
+.taoisigh-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 0px;
+
+  li{
+    list-style: none;
+    width: 20%;
+  }
+}
